@@ -21,7 +21,7 @@ function getPrimeNumbers(n){
 
     if (!notMultiple) {
       result.push(i);
-      console.log("Script: getPrimeNumbers added' + i + " to the list");
+      console.log("Script: getPrimeNumbers added" + i + " to the list");
     }
   }
 
