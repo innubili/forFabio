@@ -12,9 +12,9 @@ console.log("Script: " + __filename + "\nWrote some numbers To: " + outfile);
 function getPrimeNumbers(n){
   if (n < 2) return [];
   var result = [2];
-  for (var i = 3; i <= n; i++) {
+  var i = 3;
+  while (result.length < 100) {
     var notMultiple = false;
-    
     for (var j in result) { 
       notMultiple = notMultiple || (0 === i % result[j]); 
     }
@@ -23,6 +23,7 @@ function getPrimeNumbers(n){
       result.push(i);
       console.log("Script: getPrimeNumbers added" + i + " to the list");
     }
+    i++;
   }
 
   return result;
